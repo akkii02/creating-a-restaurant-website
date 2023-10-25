@@ -41,7 +41,7 @@ let indianFoodMenu = [
   },
 ];
 
-function MealsItems() {
+function MealsItems(props) {
   return (
     <div className={classes.meals}>
       <Card>
@@ -55,7 +55,7 @@ function MealsItems() {
                   <div className={classes.price}>{items.price} &#8377;</div>
                 </div>
                 <div>
-                  <MealItemForm/>
+                  <MealItemForm id={items.id}/>
                 </div>
               </li>
             );
