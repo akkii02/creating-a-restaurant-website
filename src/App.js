@@ -5,9 +5,9 @@ import MealsComponents from "./components/Meals/MealsComponents";
 function App() {
   return (
     <Fragment>
-      <Header/>
+      <Header />
       <main>
-        <MealsComponents/>
+        <MealsComponents />
       </main>
     </Fragment>
   );

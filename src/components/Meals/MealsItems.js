@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./MealsItems.module.css";
 import Card from "../UI/Card";
+import MealItemForm from "./MealIemForm";
 
 let indianFoodMenu = [
   {
@@ -52,6 +53,9 @@ function MealsItems() {
                   <h3>{items.foodname}</h3>
                   <div className={classes.description}>{items.description}</div>
                   <div className={classes.price}>{items.price} &#8377;</div>
+                </div>
+                <div>
+                  <MealItemForm/>
                 </div>
               </li>
             );
